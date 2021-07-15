@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/Sitios")
+@RequestMapping("/sitios")
 public class ControlerSitios {
    
     @Autowired 
@@ -29,8 +29,8 @@ public class ControlerSitios {
     }
 
     @PostMapping("/grupo2/insertlista")
-    public Sitios guardarCarreras(@RequestBody Sitios carreras){
-        return this.service.GuardarSitio(carreras);
+    public Sitios guardarSitios(@RequestBody Sitios sitios){
+        return this.service.GuardarSitio(sitios);
 
     }
     @DeleteMapping("/grupo2/lista/{id}")  

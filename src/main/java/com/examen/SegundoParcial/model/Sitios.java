@@ -18,6 +18,7 @@ public class Sitios {
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private int id;
+    
     @Column(name="descripcion",length = 255)
     private String descripcion;
     @Column(name="latitud",length = 255)
